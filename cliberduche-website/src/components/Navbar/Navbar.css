@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background: #08377c;
+  /* background: #08377c; */
   z-index: 1000;
 }
 
@@ -81,7 +81,7 @@
 /* Hover effect inside dropdown */
 .dropdown-menu li a:hover {
   background: rgba(255, 255, 255, 0.15);
-  padding-left: 28px;
+  padding-left: 30px;
 }
 
 /* Show dropdown */
@@ -91,7 +91,7 @@
 
 .dropdown-menu {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(10x);
   pointer-events: none;
   transition: all 0.25s ease;
 }

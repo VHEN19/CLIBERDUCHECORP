@@ -1,5 +1,5 @@
 import "./Home.css";
-
+import Carousel from "./Carousel";
 const Home = () => {
   return (
     <section id="home" className="home-section">
@@ -37,29 +37,10 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Project Highlight Section */}
-        <div className="project-highlight">
-          <div className="project-card">
+        {/* Feature Carousel */}
+        <Carousel />
 
-            <img
-              src="/images/land-development.jpg"
-              alt="Land Development"
-              className="project-image"
-            />
 
-            <h3>Land Development</h3>
-
-            <div className="slider-dots">
-              <span className="dot active"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-            </div>
-
-            <button className="project-btn">EXPLORE PROJECTS</button>
-
-          </div>
-        </div>
 
       </div>
     </section>

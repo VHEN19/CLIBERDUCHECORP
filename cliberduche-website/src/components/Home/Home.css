@@ -20,20 +20,25 @@
 
 /* Hero Text Box */
 .hero-box {
-  max-width: 1200px;
+  max-width: 1500px;
   padding: 30px;
   border-radius: 15px;
-  background: rgba(0, 0, 0, 0.12);
-  /* backdrop-filter: blur(10px); */
+  /* background: linear-gradient(
+  to right, 
+  #0276c4,
+   #ffffff
+   ); */
+  backdrop-filter: blur(10px);
   margin-bottom: 50px;
   margin-top: 20px;
 }
 
 .hero-box h1 {
-  font-size: 36px;
+  font-size: 46px;
+  font-weight: bold;
   color: #ffffff;
   margin-bottom: 15px;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .hero-box p {
@@ -51,6 +56,7 @@
 
 .feature-card {
   border: 2px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 25px;
   text-align: center;
@@ -83,7 +89,7 @@
 
 .project-card {
   background: rgba(255, 255, 255, 0.12);
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
   border-radius: 25px;
   padding: 25px;
   width: 900px;
@@ -146,3 +152,97 @@
 .project-btn:hover {
   background: #26a626;
 }
+
+
+/* PURE REACT FEATURE CAROUSEL */
+.feature-carousel {
+  margin-top: 60px;
+  border-radius: 25px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Track */
+.carousel-track {
+  position: relative;
+}
+
+/* Slides */
+.carousel-slide {
+  display: none;
+  position: relative;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+/* Image */
+.carousel-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Caption */
+.carousel-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.carousel-caption h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Button */
+.carousel-btn {
+  margin-top: 12px;
+  background: #0276c4;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: #015fa0;
+}
+
+/* Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.dot.active {
+  background: #2dbb2d;
+  opacity: 1;
+}
+
